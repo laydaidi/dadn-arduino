@@ -10,15 +10,15 @@
 #include "camera_pins.h"
 #include "camera_index.h"
 
-const char* ssid =      "TUAN_KHANH";        // Please change ssid & password
-const char* password =  "0918990792";
+const char* ssid =      "";        // Please change ssid & password
+const char* password =  "";
 
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_PORT        1883
 #define AIO_USERNAME    "CSE_BBC"
-#define AIO_KEY         "aio_MClx53gwLBvPUXxoOfkqVGjRMeav"
+#define AIO_KEY         ""
 #define AIO_USERNAME1   "CSE_BBC_phake"
-#define AIO_KEY1        "aio_Rgaa833cOTT4O2UhfASBT5RtLJEW"
+#define AIO_KEY1        ""
 
 /************ Global State for MQTT client ******************/
 WiFiClient      wifiClient;
