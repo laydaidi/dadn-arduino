@@ -15,7 +15,7 @@ const char* password =  "";
 
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_PORT        1883
-#define AIO_USERNAME    "CSE_BBC"
+#define AIO_USERNAME    "CSE_BBC_phake"
 #define AIO_KEY         ""
 #define AIO_USERNAME1   "CSE_BBC_phake"
 #define AIO_KEY1        ""
@@ -27,8 +27,8 @@ PubSubClient    mqttClient(wifiClient);
 PubSubClient    mqttClient1(wifiClient1);
 
 /****************************** Feeds ***************************************/
-char subBtnTopic[] =    "CSE_BBC/feeds/bk-iot-button";
-char pubLEDTopic[] =    "CSE_BBC/feeds/bk-iot-led";
+char subBtnTopic[] =    "CSE_BBC_phake/feeds/bk-iot-button";
+char pubLEDTopic[] =    "CSE_BBC_phake/feeds/bk-iot-led";
 char pubESPTopic[] =    "CSE_BBC_phake/feeds/bk-iot-esp32-cam";
 
 /************ Global State for Web socket server ******************/
@@ -65,7 +65,7 @@ void configCamera(){
     // Select lower framesize if the camera doesn't support PSRAM
     if(psramFound()){
         config.frame_size = FRAMESIZE_VGA; // FRAMESIZE_ + QVGA|CIF|VGA|SVGA|XGA|SXGA|UXGA
-        config.jpeg_quality = 10; //10-63 lower number means higher quality
+        config.jpeg_quality = 30; //10-63 lower number means higher quality
         config.fb_count = 2;
     } 
     else {
